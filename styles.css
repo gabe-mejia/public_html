@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+.container {
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+.header {
+    text-align: left;
+    margin: 50px 0;
+}
+
+.header h1 {
+    font-size: 48px;
+    color: #333;
+}
+.header .title {
+    font-size: 24px;
+    color: #666;
+}
+
+.about, .blog, .contact {
+    margin: 40px 0;
+}
+
+.about h2, .blog h2, .contact h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    color: #555;
+}
+
+.blog ul {
+    list-style-type: none;
+}
+
+.blog ul li {
+    margin-bottom: 10px;
+}
+
+.blog ul li a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.blog ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact a {
+    color: #3498db;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+/* Remove the hyperlink underlinings */
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit the color from the header */
+}
+
+a:hover {
+    color: #3498db; /* Optional: Change color on hover */
+}
+/* Social Logo */
+.social-logo {
+    width: 8%; /* Scale to x% of its original size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+footer {
+    text-align: center;
+    margin-top: 50px;
+    color: #777;
+}
+/* Styling for the profile image in the top-right corner */
+.dropdown {
+    position: absolute;
+    top: 75px;
+    right: 175px;
+    display: inline-block;
+    cursor: pointer;
+}
+.module {
+    
+}
+
+.profile-image {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+/* Hide the dropdown content initially */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    background-color: white;
+    box-shadow: 0px 8px 80px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content-Linkedin a,
+.dropdown-content-Projects a,
+.dropdown-content-Login a,
+.dropdown-content-Chat a {
+    text-decoration: none;
+    display: block;
+    color: #333;
+    padding: 8px 60px;
+}
+
+.dropdown-content-Linkedin a:hover,
+.dropdown-content-Projects a:hover,
+.dropdown-content-Login a:hover,
+.dropdown-content-Chat a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown on hover (desktop) */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/* Media Query for smaller screens (like iPhones) */
+@media screen and (max-width: 600px) {
+    .dropdown {
+        position: absolute;
+        top: 10px;  /* Adjust the top position */
+        right: 10px;  /* Adjust the right position */
+    }
+    .social-logo {
+        width: 25% !important; /* Force the size to be 15% */
+        height: auto !important; /* Maintain aspect ratio */
+    }
+}
+/*-- End the drop down feature here --<>

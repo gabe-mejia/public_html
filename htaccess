@@ -1,0 +1,15 @@
+
+RewriteOptions inherit
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^.*$
+RewriteRule ^/?$ "https\:\/\/www\.gabemejia\.com\/" [R=301,L]
+
+# The two bullet points below allow to hide ".html" on files
+#1 Enable RewriteEngine
+RewriteEngine On
+
+#2 Redirect requests for URLs without .html extension
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
